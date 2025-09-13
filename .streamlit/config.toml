@@ -1,0 +1,8 @@
+[theme]
+primaryColor="#00AC66"
+
+[logger]
+level = "info"
+
+[browser]
+gatherUsageStats = false

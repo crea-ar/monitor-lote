@@ -1,0 +1,1 @@
+streamlit run --server.port 8501 Inicio.py --logger.level=error 2> streamlit_logs.log
