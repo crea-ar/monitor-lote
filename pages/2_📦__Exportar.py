@@ -93,7 +93,9 @@ if grupo_seleccionado:
 	# 4. Botón para exportar a shapefile
 	if st.button("📦 Exportar a Shapefile"):
 		with st.spinner("Generando archivos..."):
-			nombre_base = 'CREA_' + df.loc[1, 'GRUPO'].replace(" ", "")
+			#nombre_base = 'CREA_' + df.loc[1, 'GRUPO'].replace(" ", "")
+			nombre_base = df.loc[0, 'GRUPO'].replace(" ", "")
+			nombre_base = nombre_base.replace("CREA", "CREA_")
 			#nombre_base = f"{grupo_seleccionado.replace(' ', '_')}"
 			zip_file_path, zip_file_name = exportar_shapefile(df, nombre_base)
 
